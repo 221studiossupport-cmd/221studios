@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>221 studios — Игровая Арена «ЗВУКОВОЙ УДАР»</title>
+    <style>
+        /* Брутальный угольно-чёрный стиль игровых страниц Нотча 2009-2010 годов */
+        body {
+            background-color: #111111;
+            background-image: radial-gradient(#222222 15%, transparent 16%), radial-gradient(#222222 15%, transparent 16%);
+            background-size: 12px 12px;
+            background-position: 0 0, 6px 6px;
+            color: #ffffff;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .game-title-zone {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .game-title-zone h1 {
+            font-size: 32px;
+            color: #0055ff;
+            text-shadow: 2px 2px 0px #001155;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .game-title-zone p {
+            font-size: 12px;
+            color: #888888;
+            margin: 5px 0 0 0;
+        }
+
+        /* Выделенный бронированный контейнер под окно Java-игры */
+        .arcade-cabinet {
+            width: 1000px;
+            height: 600px;
+            background: #000000;
+            border: 6px solid #444444;
+            border-top: 6px solid #888888;
+            border-left: 6px solid #888888;
+            box-shadow: 0px 0px 30px rgba(0, 85, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .loading-engine {
+            color: #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: pulseText 1.5s infinite;
+        }
+
+        @keyframes pulseText {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        .controls-bar {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #666666;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1.4;
+        }
+
+        .controls-bar b {
+            color: #bbb;
+        }
+    </style>
+    <!-- Официальный стабильный веб-движок CheerpJ для компиляции Java в HTML5 на лету -->
+    <script src="https://leaningtech.com"></script>
+</head>
+<body>
+
+    <!-- Шапка игрового сайта -->
+    <div class="game-title-zone">
+        <h1>SQUARE ULTIMATUM: SOUND PUNCH</h1>
+        <p>221 STUDIOS BROWSER IN-GAME PORTAL // VERSION: ALPHA 4.2</p>
+    </div>
+
+    <!-- Игровой автомат -->
+    <div class="arcade-cabinet">
+        <div id="cheerpj-display">
+            <div class="loading-engine">ПОДКЛЮЧЕНИЕ К ДВИЖКУ JAVA... ЗАГРУЗКА БИЛДА 4.2...</div>
+        </div>
+    </div>
+
+    <!-- Панель управления для игроков -->
+    <div class="controls-bar">
+        Управление Гарри: <b>W, A, S, D</b> — Движение // <b>Мышь</b> — Направление прицела // <b>Пробел / Левый Клик</b> — Огонь пушек и удар топора<br>
+        &copy; 2026 221 STUDIOS. ЗАПУЩЕНО НА СЕРВЕРАХ GITHUB PAGES С ПОДДЕРЖКОЙ INTERNET ARCHIVE.
+    </div>
+
+    <script>
+        // Запуск .jar файла прямо внутри нашей выделенной страницы
+        window.addEventListener('load', async () => {
+            await cheerpjInit();
+            cheerpjCreateDisplay(1000, 600, document.getElementById("cheerpj-display"));
+            // Подтягиваем файл нашей игры напрямую из твоего Internet Archive репозитория
+            await cheerpjRunJar("/app/Game.jar");
+        });
+    </script>
+
+</body>
+</html>
