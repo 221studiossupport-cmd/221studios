@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>221 studios — Home of Square Ultimatum</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            background-image: 
+                linear-gradient(30deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f),
+                linear-gradient(150deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f),
+                linear-gradient(30deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f),
+                linear-gradient(150deg, #1f1f1f 12%, transparent 12.5%, transparent 87%, #1f1f1f 87.5%, #1f1f1f),
+                linear-gradient(60deg, #3a3a3a 25%, transparent 25.5%, transparent 75%, #3a3a3a 75.5%, #3a3a3a),
+                linear-gradient(60deg, #3a3a3a 25%, transparent 25.5%, transparent 75%, #3a3a3a 75.5%, #3a3a3a);
+            background-size: 20px 35px;
+            background-position: 0 0, 0 0, 10px 17.5px, 10px 17.5px, 0 0, 10px 17.5px;
+            font-family: "Courier New", Courier, monospace;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 900px;
+            margin: 40px auto;
+            background: #cccccc;
+            border: 5px solid #555555;
+            border-top: 5px solid #ffffff;
+            border-left: 5px solid #ffffff;
+            box-shadow: 12px 12px 0px rgba(0,0,0,0.6);
+        }
+        .header-banner {
+            background: linear-gradient(to bottom, #bdbdbd, #757575);
+            padding: 30px;
+            border-bottom: 5px solid #555555;
+            text-align: center;
+        }
+        .studio-logo-img {
+            width: 80px;
+            height: 80px;
+            image-rendering: pixelated;
+            margin-bottom: 10px;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+            border: 3px solid #333333;
+            background: #555555;
+        }
+        .main-title {
+            font-size: 52px;
+            font-weight: bold;
+            color: #0055ff;
+            text-shadow: 4px 4px 0px #001155;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+        .main-subtitle {
+            font-size: 14px;
+            color: #111;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .main-layout {
+            display: flex;
+            background: #e0e0e0;
+        }
+        .left-column {
+            width: 58%;
+            padding: 25px;
+            border-right: 4px solid #555555;
+        }
+        .right-column {
+            width: 42%;
+            padding: 25px;
+            background: #d5d5d5;
+        }
+        .post-card {
+            background: #ffffff;
+            border: 3px solid #777777;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 4px 4px 0px #999999;
+        }
+        .card-header {
+            font-size: 11px;
+            color: #666666;
+            font-weight: bold;
+            border-bottom: 2px solid #0055ff;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+        .download-panel {
+            background: #fff3cd;
+            border: 3px dashed #ffc107;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .btn-green {
+            display: block;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            border: 3px solid #1e7e34;
+            border-bottom: 6px solid #115522;
+            text-align: center;
+        }
+        .btn-green:hover {
+            background: #218838;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        .info-table th, .info-table td {
+            border: 2px solid #888888;
+            padding: 8px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .info-table th {
+            background: #999999;
+            color: white;
+        }
+        .footer-line {
+            background: #666666;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffffff;
+            border-top: 5px solid #444444;
+        }
+        a.version-link {
+            color: #0055ff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header-banner">
+            <img src="logo.png" alt="221 Сулл" class="studio-logo-img">
+            <div class="main-title">221 STUDIOS</div>
+            <div class="main-subtitle">Официальный хардкорный хаб разработки Java-игр</div>
+        </div>
+
+        <div class="main-layout">
+            <div class="left-column">
+                <div class="post-card">
+                    <div class="card-header">ТАЙНА НАЗВАНИЯ НАШЕЙ СТУДИИ</div>
+                    <h2>Что означает «221»?</h2>
+                    <p>Истинный хардкор кроется в деталях. Логотип нашей студии представляет собой брутальный череп с трещинами, где каждая цифра имеет своё значение:</p>
+                    <ul>
+                        <li><b>2 точки</b> — это пустые, зловещие глаза черепа.</li>
+                        <li><b>2 линии</b> — хардкорные боевые трещины на лобной кости.</li>
+                        <li><b>1 шар</b> — сама круглая основа ультимативного черепа инди-разработки!</li>
+                    </ul>
+                </div>
+
+                <div class="post-card">
+                    <div class="card-header">ДАТА: 24 ОКТЯБРЯ 2026 Г. | АВТОР: МУСТАФА</div>
+                    <h2>Прототип 4 «ЗВУКОВОЙ УДАР» готов к отправке!</h2>
+                    <p>Привет, тестеры! Мы переписали графический движок, стабилизировали Столбняк и зашили в прототип настоящие 8-битные рок-риффы!</p>
+                    <p><strong>Главная фишка билда:</strong> Гарри получил динамический индикатор здоровья. Полоска меняет цвет от салатового до кроваво-красного в зависимости от тяжести ранений!</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="download-panel">
+                    <h3>Текущий релиз:</h3>
+                    <p>Прототип 3</p>
+                    <a href="https://archive.org/details/game_20261023_20261023" target="_blank" class="btn-green">СКАЧАТЬ ПРОТОТИП (.jar)</a>
+                </div>
+
+                <div class="post-card" style="padding: 10px;">
+                    <h3 style="text-align: center; margin-top: 5px;">История прототипов:</h3>
+                    <table class="info-table">
+                        <tr>
+                            <th>Сборка</th>
+                            <th>Фишка</th>
+                            <th>Файл</th>
+                        </tr>
+                        <tr>
+                            <td><b>Proto 1</b></td>
+                            <td>База</td>
+                            <td><a href="https://archive.org/details/game_20261023" target="_blank" class="version-link">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Proto 2</b></td>
+                            <td>Процедурная генерация</td>
+                            <td><a href="https://archive.org/details/game_20261023_202610" target="_blank" class="version-link">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Proto 3</b></td>
+                            <td>Генерация лабиринта!</td>
+                            <td><a href="https://archive.org/details/game_20261023_20261023" target="_blank" class="version-link">Скачать</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Proto 4</b></td>
+                            <td>MilkyTracker звук и музыка</td>
+                            <td>Скоро...</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-line">
+            &copy; 2026 221 studios. Разработано Мустафой и его Лучшим Другом. Powered by Java & Internet Archive.
+        </div>
+    </div>
+</body>
+</html>
